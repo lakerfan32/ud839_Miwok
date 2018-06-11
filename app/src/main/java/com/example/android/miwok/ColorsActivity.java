@@ -27,20 +27,18 @@ public class ColorsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_colors);
+        setContentView(R.layout.word_list);
 
         // Create an array of words for numbers category
         ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("one","lutti"));
-        words.add(new Word("two","otiiko"));
-        words.add(new Word("three","tolookosu"));
-        words.add(new Word("four","oyyisa"));
-        words.add(new Word("five","massokka"));
-        words.add(new Word("six","temmokka"));
-        words.add(new Word("seven","kenekaku"));
-        words.add(new Word("eight","kawinta"));
-        words.add(new Word("nine","wo'e"));
-        words.add(new Word("ten","na'aacha"));
+        words.add(new Word("red","wetetti"));
+        words.add(new Word("green","chokokki"));
+        words.add(new Word("brown","takaakki"));
+        words.add(new Word("gray","topoppi"));
+        words.add(new Word("black","kululli"));
+        words.add(new Word("white","kelelli"));
+        words.add(new Word("dusty yellow","topiise"));
+        words.add(new Word("mustard yellow","chiwiite"));
 
         /**
          * Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
@@ -54,7 +52,7 @@ public class ColorsActivity extends AppCompatActivity {
         /**
          * Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
          * There should be a {@link ListView} with the view ID called list, which is declared in the
-         * activity_numbers.xml layout file.
+         * word_list.xml file.
          */
         ListView listView = (ListView) findViewById(R.id.list);
 
